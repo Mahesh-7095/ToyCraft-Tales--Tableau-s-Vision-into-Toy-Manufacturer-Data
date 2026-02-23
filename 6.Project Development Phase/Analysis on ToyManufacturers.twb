@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='week 39 - us toy manufacturers - 2005 to 2016 (ToyCraft_Tales)' inline='true' name='federated.0loagbp18yj9ja14ajm4o00v6hfc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='127.0.0.1' name='mysql.0tubuzn0cjrkfn17bf1dr0fxixwr'>
+            <connection class='mysql' dbname='ToyCraft_Tales' odbc-native-protocol='' one-time-sql='' port='3306' server='127.0.0.1' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.0tubuzn0cjrkfn17bf1dr0fxixwr' name='week 39 - us toy manufacturers - 2005 to 2016' table='[week 39 - us toy manufacturers - 2005 to 2016]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[week 39 - us toy manufacturers - 2005 to 2016]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[week 39 - us toy manufacturers - 2005 to 2016]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[week 39 - us toy manufacturers - 2005 to 2016]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Manufacturers</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Number of Manufacturers]</local-name>
+            <parent-name>[week 39 - us toy manufacturers - 2005 to 2016]</parent-name>
+            <remote-alias>Number of Manufacturers</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' caption='Top 10' datatype='integer' name='[Index (bin) 2]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[index]' peg='0' size='20.7' />
+      </column>
+      <column aggregation='None' caption='Index (bin)' datatype='integer' name='[Index (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-1' formula='[index]' peg='0' size='20.7' />
+      </column>
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='week 39 - us toy manufacturers - 2005 to 2016' datatype='table' name='[__tableau_internal_object_id__].[week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14]' role='measure' type='quantitative' />
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column-instance column='[Index (bin)]' derivation='None' name='[none:Index (bin):ok]' pivot='key' type='ordinal' />
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Index (bin):ok]' palette='tableau20_10_0' type='palette'>
+            <map to='#2e5b88'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#3b6996'>
+              <bucket>24</bucket>
+            </map>
+            <map to='#43719f'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#80b0d4'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#a4cfe9'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#abd3ec'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#b2d8ee'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>8</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='week 39 - us toy manufacturers - 2005 to 2016' id='week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14'>
+            <properties context=''>
+              <relation connection='mysql.0tubuzn0cjrkfn17bf1dr0fxixwr' name='week 39 - us toy manufacturers - 2005 to 2016' table='[week 39 - us toy manufacturers - 2005 to 2016]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Analysis on ToyManufacturers'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Analysis on ToyManufacturers</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='week 39 - us toy manufacturers - 2005 to 2016 (ToyCraft_Tales)' name='federated.0loagbp18yj9ja14ajm4o00v6hfc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0loagbp18yj9ja14ajm4o00v6hfc'>
+            <column datatype='integer' name='[Number of Manufacturers]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14:qk]' pivot='key' type='quantitative' />
+            <column caption='week 39 - us toy manufacturers - 2005 to 2016' datatype='table' name='[__tableau_internal_object_id__].[week 39 - us toy manufacturers - 2005 to 2016_AD3323EC9CE74ABD8AE1A306EB6D8D14]' role='measure' type='quantitative' />
+            <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Manufacturers]' derivation='Sum' name='[sum:Number of Manufacturers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[index]' derivation='Sum' name='[sum:index:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0loagbp18yj9ja14ajm4o00v6hfc].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0loagbp18yj9ja14ajm4o00v6hfc].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0loagbp18yj9ja14ajm4o00v6hfc].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0loagbp18yj9ja14ajm4o00v6hfc].[Multiple Values]</rows>
+        <cols>[federated.0loagbp18yj9ja14ajm4o00v6hfc].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{B5091332-A1D1-49D1-B6C8-2503722F3AF6}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Analysis on ToyManufacturers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0loagbp18yj9ja14ajm4o00v6hfc].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3FF477FE-2ECA-4FAD-9A92-6F0A3F1DF9AC}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Analysis on ToyManufacturers' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
